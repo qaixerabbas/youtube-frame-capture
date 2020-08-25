@@ -10,4 +10,4 @@ Then select the output directory where you want to save the frames (edit python 
 
 ## Step 2. python <script-name.py>
 
-It will strat capturing frames from youtube video and download it into the specified folders.
+It will start capturing frames from youtube video and download it into the specified folders.
