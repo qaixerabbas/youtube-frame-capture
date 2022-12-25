@@ -4,10 +4,12 @@ import cv2
 import os
 from vidgear.gears import CamGear
 ### Replace this youtube video link with your one
-stream = CamGear(source='https://www.youtube.com/watch?v=lQc432kUOpM', y_tube =True,  time_delay=1, logging=True).start()
+#https://www.youtube.com/watch?v=lQc432kUOpM
+stream = CamGear(source='https://www.youtube.com/watch?v=69X8ZLj1ukw', stream_mode =True,  time_delay=1, logging=True).start()
 
 #this should be the path where u want ur images
-path  = 'C:\\Users\\user\\Desktop\\Capture Frames from Online YouTube Video\\cars\\'
+# path  = 'C:\\Users\\user\\Desktop\\Capture Frames from Online YouTube Video\\cars\\'
+path = "D:\\github codes\\test\\"
 
 currentframe = 0
 while True:
@@ -31,5 +33,4 @@ while True:
         break
 
 cv2.destroyAllWindows()
-stream.stop()
 stream.stop()
