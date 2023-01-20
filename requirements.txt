@@ -1,1 +1,2 @@
-opencv-python vidgear
+opencv-python 
+vidgear
