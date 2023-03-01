@@ -1,6 +1,8 @@
 import cv2
 import os
 from vidgear.gears import CamGear
+import sys
+import argparse
 
 stream = CamGear(
     source="https://www.youtube.com/watch?v=69X8ZLj1ukw",
