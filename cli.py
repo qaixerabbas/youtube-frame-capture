@@ -4,6 +4,22 @@ from vidgear.gears import CamGear
 import sys
 import argparse
 
+parser = argparse.ArgumentParser(
+    prog="downlaod_youtube_frames.",
+    description="Program to automatically download youtube images datasets.",
+    epilog="A simple and nice cli script to create youtube datasets",
+)
+
+parser.add_argument(
+    "--videolink", required=True, type=str, help="Target video link to YouTube video"
+)
+
+parser.add_argument(
+    "--destination", required=True, type=str, help="Target destination to save dataset"
+)
+
+args = parser.parse_args()
+
 stream = CamGear(
     source="https://www.youtube.com/watch?v=69X8ZLj1ukw",
     stream_mode=True,
