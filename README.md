@@ -35,3 +35,14 @@ Usage
 
   A simple and nice cli script to create youtube datasets
 ```
+
+How to run on cli/terminal?
+
+Example run
+
+``` >>> python cli.py --videolink "https://www.youtube.com/watch?v=PWRg_wak9oI" --destination "D:\dataset\test" ```
+
+Running like above example will start downloading the video frames into the provided destination. In the example run the script will create a "frames" folder inside provided 
+destination and save the output in that folder
+
+NOTE: Make sure the --videolink and --destination are both strings (enclosed in quoutation marks)
