@@ -10,24 +10,22 @@ parser = argparse.ArgumentParser(
     epilog="A simple and nice cli script to create youtube datasets",
 )
 
-parser.add_argument(
-    "--videolink", required=True, type=str, help="Target video link to YouTube video"
-)
+parser.add_argument("--videolink", required=True, type=str, help="YouTube video link")
 
 parser.add_argument(
-    "--destination", required=True, type=str, help="Target destination to save dataset"
+    "--destination", required=True, type=str, help="Target path to save imgz"
 )
 
 args = parser.parse_args()
+path = args.destination  # "D:\\github codes\\test\\"
+source = args.videolink
 
 stream = CamGear(
-    source="https://www.youtube.com/watch?v=69X8ZLj1ukw",
+    source=source,
     stream_mode=True,
     time_delay=1,
     logging=True,
 ).start()
-
-path = "D:\\github codes\\test\\"
 
 currentframe = 0
 while True:
