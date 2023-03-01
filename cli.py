@@ -16,9 +16,14 @@ parser.add_argument(
     "--destination", required=True, type=str, help="Target path to save imgz"
 )
 
+parser.add_argument(
+    "--showframe", required=False, action="store_true", help="Show the resulting frames"
+)
+
 args = parser.parse_args()
 path = args.destination
 source = args.videolink
+show_frame = args.showframe
 
 stream = CamGear(
     source=source,
@@ -33,8 +38,8 @@ while True:
     frame = stream.read()
     if frame is None:
         break
-
-    cv2.imshow("Output Frame", frame)
+    if show_frame:
+        cv2.imshow("Output Frame", frame)
 
     name = path + "./frames" + str(currentframe) + ".jpg"
     print("Creating..." + name)
