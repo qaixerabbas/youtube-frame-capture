@@ -18,10 +18,11 @@ Add youtube video and output dir in python script
 
 It will start capturing frames from youtube video and download it into the specified folders.
 
-Alternatively you can use the cli.py file if you do not want to manually modify the main script.
+
 
 Usage
 ---
+Alternatively you can use the cli.py file if you do not want to manually modify the main script.
 ```
 >>> python cli.py --help
 >>> usage: downlaod_youtube_frames. [-h] --videolink VIDEOLINK --destination DESTINATION
