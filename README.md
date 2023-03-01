@@ -9,7 +9,8 @@ You can use this python code to download the frames of youtube video without dow
 ### Step 1. pip install -r requirements.txt
 Then select the output directory where you want to save the frames (edit python code to set paths and directories)
 
-### Step 2. update the .py file (add youtube video and output dir)
+### Step 2. update the .py file 
+Add youtube video and output dir in python script
 
 ### step 3. python <script-name.py>
 
