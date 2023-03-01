@@ -1,10 +1,8 @@
 # Automatic YouTube Data Collection
 
-make your life easy :) 
+Make your life easy :) 
 
-Python code to download the franes of a YouTube video without downloading video file 
-
-### Build your own dataset for object recognition and object detection/segmentation
+Build your own dataset for object recognition and object detection/segmentation
 
 You can use this python code to download the frames of youtube video without downloading video. 
 
@@ -45,6 +43,10 @@ Example run
 
 ``` >>> python cli.py --videolink "https://www.youtube.com/watch?v=PWRg_wak9oI" --destination "D:\dataset\test" ```
 
-Running like above example will start downloading the video frames into the provided destination.
+Running like above example will start downloading the video frames into the provided destination. Optionally, you can provide ``` --showframe ``` argument in command line if you want to show the frames that are being saved to local disk.
 
-NOTE: Make sure the --videolink and --destination are both strings (enclosed in quoutation marks)
+Example
+
+``` >>> python cli.py --videolink "https://www.youtube.com/watch?v=PWRg_wak9oI" --destination "D:\dataset\test" --showframe ```
+
+NOTE: Make sure ``` --videolink ``` and ``` --destination ``` are both strings (enclosed in quoutation marks)
