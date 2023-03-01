@@ -17,7 +17,7 @@ parser.add_argument(
 )
 
 args = parser.parse_args()
-path = args.destination  # "D:\\github codes\\test\\"
+path = args.destination
 source = args.videolink
 
 stream = CamGear(
