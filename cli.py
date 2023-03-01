@@ -3,6 +3,7 @@ import os
 from vidgear.gears import CamGear
 import sys
 import argparse
+import time
 
 parser = argparse.ArgumentParser(
     prog="downlaod_youtube_frames.",
@@ -25,6 +26,8 @@ path = args.destination
 source = args.videolink
 show_frame = args.showframe
 
+time_start = time.time()
+
 stream = CamGear(
     source=source,
     stream_mode=True,
@@ -41,7 +44,7 @@ while True:
     if show_frame:
         cv2.imshow("Output Frame", frame)
 
-    name = path + "./frames" + str(currentframe) + ".jpg"
+    name = path + "./frame" + str(currentframe) + ".jpg"
     print("Creating..." + name)
 
     cv2.imwrite(name, frame)
@@ -54,3 +57,12 @@ while True:
 
 cv2.destroyAllWindows()
 stream.stop()
+
+time_end = time.time()
+
+time_taken = round(time_end - time_start, 3)
+print("=======================================================")
+print("-------------------------------------------------------")
+print(f"## The time taken to create dataset: {time_taken} seconds ##")
+print("-------------------------------------------------------")
+print("=======================================================")
