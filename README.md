@@ -50,3 +50,19 @@ Example
 ``` >>> python cli.py --videolink "https://www.youtube.com/watch?v=PWRg_wak9oI" --destination "D:\dataset\test" --showframe ```
 
 NOTE: Make sure ``` --videolink ``` and ``` --destination ``` are both strings (enclosed in quoutation marks)
+
+### Todo
+
+- [ ] Add framecount in argparse 
+- [ ] merge this to deepds
+- [ ] work with any online videos ( YouTube + more )
+
+### In Progress
+
+- [ ] Working on improving readme, How-To and upload on PyPI. 
+
+### Done ✓
+
+- [x] Capturing frames from remote YouTube videos.
+- [x] Saving frames to target directory.
+- [x] Cli.py file for easy usage.
