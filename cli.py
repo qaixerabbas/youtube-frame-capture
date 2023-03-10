@@ -14,6 +14,10 @@ parser = argparse.ArgumentParser(
 parser.add_argument("--videolink", required=True, type=str, help="YouTube video link")
 
 parser.add_argument(
+    "--framecount", required=True, type=int, default=5, help="Number of frames to skip"
+)
+
+parser.add_argument(
     "--destination", required=True, type=str, help="Target path to save imgz"
 )
 
@@ -25,6 +29,7 @@ args = parser.parse_args()
 path = args.destination
 source = args.videolink
 show_frame = args.showframe
+framecount = args.framecount
 
 time_start = time.time()
 
@@ -48,7 +53,7 @@ while True:
     print("Creating..." + name)
 
     cv2.imwrite(name, frame)
-    currentframe += 5
+    currentframe += framecount
 
     key = cv2.waitKey(1) & 0xFF
 
