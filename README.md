@@ -1,8 +1,8 @@
-# Automatic YouTube Data Collection
+# Automatic YouTube Visual Data Collection
 
 Make your life easy :) 
 
-Build your own dataset for object recognition and object detection/segmentation
+## Build your own dataset for object recognition and object detection/segmentation
 
 You can use this python code to download the frames of youtube video without downloading video. 
 
@@ -54,7 +54,6 @@ NOTE: Make sure ``` --videolink ``` and ``` --destination ``` are both strings (
 ### Todo
 
 - [ ] Add framecount in argparse 
-- [ ] merge this to deepds
 - [ ] work with any online videos ( YouTube + more )
 
 ### In Progress
@@ -64,5 +63,6 @@ NOTE: Make sure ``` --videolink ``` and ``` --destination ``` are both strings (
 ### Done ✓
 
 - [x] Capturing frames from remote YouTube videos.
+- [x] merge this to deepds
 - [x] Saving frames to target directory.
 - [x] Cli.py file for easy usage.
