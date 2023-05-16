@@ -49,7 +49,7 @@ Example
 
 ``` >>> python cli.py --videolink "https://www.youtube.com/watch?v=PWRg_wak9oI" --destination "D:\dataset\test" --showframe ```
 
-NOTE: Make sure ``` --videolink ``` and ``` --destination ``` are both strings (enclosed in quoutation marks)
+NOTE: Make sure ``` --videolink ``` and ``` --destination ``` are both strings (enclosed in quotation marks)
 
 ### Todo
 
