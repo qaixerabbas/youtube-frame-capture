@@ -2,6 +2,8 @@
 
 Make your life easy :) 
 
+Note: FFMPEG is required for OpenCV to work with local downloaded videos (especially .AVI files) make sure you download and use latest FFMPEG from [this](https://www.ffmpeg.org/download.html) link.
+
 ## Build your own dataset for object recognition and object detection/segmentation
 
 You can use this python code to download the frames of youtube video without downloading video. 
