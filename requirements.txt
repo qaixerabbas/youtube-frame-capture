@@ -1,4 +1,4 @@
 opencv_python==4.6.0.66
 vidgear==0.3.0
 yt-dlp==2023.3.4
-ffmpeg-python 0.2.0
+ffmpeg-python==0.2.0
